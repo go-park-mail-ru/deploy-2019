@@ -4,8 +4,7 @@ node_js:
 script:
 - chmod 600 /home/ubuntu/deploy_id_rsa.pem
 - ssh-keyscan -H 89.208.199.114 >> ~/.ssh/known_hosts
-- scp -i /home/ubuntu/deploy_id_rsa.pem ./index.html ubu
-ntu@89.208.199.114:/home/ubuntu/www
+- scp -i /home/ubuntu/deploy_id_rsa.pem ./index.html ubuntu@89.208.199.114:/home/ubuntu/www
 branches:
   only:
   - master
